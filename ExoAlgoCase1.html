@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<sr>, initial-scale=1.0">
+    <title>ExoAlgo_Switch2</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var AGE = parseInt(prompt("Veuillez entrer votre age"));
+
+        switch (true) {
+            case AGE > 0 && AGE <= 3:
+                alert("Ne sont pas autorisés à s’inscrire");
+                break;
+            case AGE > 3 && AGE <= 6:
+                alert("L'inscription est gratuit");
+                break;
+            case AGE > 6 && AGE <= 12:
+                alert("L'inscription est 1000 DHS");
+                break;
+            case AGE > 12 && AGE <= 26:
+                alert("L'inscription est 1500 DHS");
+                break;
+            case AGE > 26 && AGE <= 120:
+                alert("L'inscription est 2000 DHS");
+                break;
+            default:
+                alert("Attention ! Veuillez entrer un âge entre 1 et 120");
+                break;
+        }
+    </script>
+</body>
+
+</html>

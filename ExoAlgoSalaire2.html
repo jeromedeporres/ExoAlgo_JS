@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<sr>, initial-scale=1.0">
+    <title>ExoAlgo_Salaire1</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var salaireFixe = parseInt(prompt("Veuillez saisir votre salaire fixe en DHSS"));
+        var CA = parseInt(prompt("Veuillez saisir votre chiffre d’affaire en DHS"));
+        var COM = 0;
+        if (CA > 100000) {
+            COM = (CA * 0.15);
+        } else if (CA > 30000 && CA < 100000) {
+            COM = (CA * 0.10);
+        }
+        var salaireMensuel = COM + salaireFixe;
+        alert("Votre salaire Mensuel est : " + salaireMensuel + " DHS");
+    </script>
+</body>
+
+</html>
